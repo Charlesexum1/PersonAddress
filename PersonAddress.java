@@ -39,19 +39,12 @@ public class PersonAddress {
 	public void setNumber(String changeNumber){
 		phoneNumber = changeNumber;
 		}
-	public boolean equal (PersonAddress x){
-		return name.equals(x.name);
-		}	
-		
-	public boolean areEqual(PersonAddress x){
-		return equals(x);
-		}	
 	
 	public boolean equals(PersonAddress otherPerson){
 		return (this.name.equals(otherPerson.name)) &&
-			   (this.address.equals(otherPerson.address)) &&
-			   (this.email.equals(otherPerson.email)) &&
-			   (this.phoneNumber.equals(otherPerson.phoneNumber));
+		       (this.address.equals(otherPerson.address)) &&
+		       (this.email.equals(otherPerson.email)) &&
+		       (this.phoneNumber.equals(otherPerson.phoneNumber));
 		}
 		
 	public static void main (String args[]) {
